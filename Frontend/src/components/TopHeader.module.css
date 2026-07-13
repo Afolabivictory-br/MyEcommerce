@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.TopHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    max-width: 1440px;
+    height: 48px;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 231px;
+}
+
+.TopHeadertext {
+    display: flex;
+    align-items: center;
+    width: 550px;
+    height: 24px;
+    gap: 8px;
+}
+
+.TopHeader a {
+    color: white;
+    font-weight: 600;
+}
+
+.lang {
+    position: relative;
+    top: 0;
+}
+
+.dropDown {
+    display: flex;
+    flex-direction: column;
+    gap:7px;
+    height: auto;
+    width: 100px;
+    background-color: black;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    top: 32.5px;
+    transform: translate(-50%);
+    text-align: center;
+    font-size: 15px;
+    z-index: 100;
+}
+
+.dropDown p:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

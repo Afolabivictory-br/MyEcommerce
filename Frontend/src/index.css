@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* whole scrollbar */
+::-webkit-scrollbar {
+  height: 8px; /* horizontal */
+  width: 8px;  /* vertical */
+}
+
+/* track (background) */
+::-webkit-scrollbar-track {
+  background: rgb(197, 197, 197);
+}
+
+/* thumb (the moving part) */
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 10px;
+}
+
+/* on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #DB4444;
+}

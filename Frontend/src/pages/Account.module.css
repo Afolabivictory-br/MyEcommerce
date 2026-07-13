@@ -1,0 +1,87 @@
+.account {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    margin: 70px;
+}
+
+.accountInfo {
+    line-height: 2.3;
+    position: sticky;
+}
+
+.accountInfo h3 {
+    font-size: 15px;
+}
+
+.accountInfo p {
+    margin-left: 20px;
+    font-size: 13px;
+    cursor: pointer;
+}
+.accountInfo p:hover {
+    color: #DB4444;
+}
+
+form {
+    font-size: 12px;
+}
+
+.input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 50px;
+    row-gap: 15px;
+    margin-bottom: 15px;
+}
+
+input {
+    height: 35px;
+    padding: 0 10px;
+    background-color: rgb(235, 234, 234);
+    border: none;
+    outline: none;
+}
+
+.inputInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.accountChanges {
+    padding: 30px 70px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgb(189, 189, 189);
+}
+.accountChanges h2 {
+    color: #DB4444;
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btns {
+    display: flex;
+    float: right;
+    margin-top: 15px;
+}
+
+.cancelBtn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.saveBtn {
+    background-color: #DB4444;
+    color: white;
+    border: none;
+    width: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+}

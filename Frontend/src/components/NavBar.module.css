@@ -1,0 +1,99 @@
+.navbar {
+    max-width: 1440px;
+    border-bottom: 1px solid rgb(151, 151, 151);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 148px;
+    margin: 40px 135px 16px 135px;
+    max-width: 1170px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 400;
+}
+
+.links ul {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    color: black;
+}
+
+.links li {
+    cursor: pointer;
+}
+
+.acctIcon {
+    position: relative;
+    cursor: pointer;
+}
+
+.acctDropdown {
+    height: auto;
+    width: 180px;
+    background: rgba(56, 56, 56, 0.2);
+    backdrop-filter: blur(30px);
+    position: absolute;
+    top: 140px;
+    transform: translateX(-60%);
+    color: white;
+}
+
+.dropDownList a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: transparent;
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 12px;
+}
+
+.theme {
+    border-radius: 50%;
+    font-size: 20px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.right a {
+    color: black;
+}
+
+.searchWrapper input {
+    outline: none;
+    border: none;
+    background: transparent;
+    height: 100%;
+}
+
+.searchWrapper {
+    display: flex;
+    align-items: center;
+    border: none;
+    gap: 10px;
+    background-color: rgb(235, 234, 234);
+    padding: 7px 12px;
+    width: 243px;
+    height: 38px;
+}

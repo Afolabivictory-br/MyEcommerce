@@ -1,0 +1,41 @@
+.subFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 80px;
+}
+
+.icon {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(194, 194, 194);
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin: 20px 0;
+}
+
+.subFooterbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0;
+    line-height: 1.6;
+}
+
+.subFooterbody h2 {
+    text-transform: uppercase;
+    font-size: 17px;
+}

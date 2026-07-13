@@ -1,0 +1,106 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+    margin-top: 50px;
+}
+
+.aboutText {
+    margin-left: 70px;
+    line-height: 2.0;
+}
+
+.aboutText h2 {
+    font-size: 50px;
+}
+
+.aboutText p {
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.aboutImg img{
+    width: 600px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.aboutRecord {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 70px;
+}
+.icon {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    height: 30px;
+    width: 30px;
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(194, 194, 194);
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    margin: 20px 0;
+}
+
+.subRecord {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 70px 0;
+    line-height: 1.6;
+    border: 1px solid black;
+    width: 240px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.subRecord:hover {
+    border: 1px solid #DB4444;
+    background-color: #DB4444;
+    color: white;
+    transition: 0.6s ease;
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+.founders {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 70px;
+}
+
+.foundersInfo h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.foundersHandle {
+    display: flex;
+    font-size: 20px;
+    gap: 10px;
+}
+
+.foundersImg {
+    border: 1px solid rgb(238, 238, 238);
+    background-color: rgb(238, 238, 238);
+    width: 330px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.foundersImg img{
+    width: 330px;
+    height: 450px;
+    object-fit: contain;
+}

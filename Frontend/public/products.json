@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphones",
+    "price": 59.99,
+    "oldPrice": 89,
+    "image": "/image/headphone.png",
+    "discount": "21",
+    "rating": 4
+  },
+  {
+    "id": 2,
+    "name": "Smart Watch",
+    "price": 100.99,
+    "oldPrice": 120.89,
+    "image": "/image/watch.png",
+    "discount": "31",
+    "rating": 5
+  },
+  {
+    "id": 3,
+    "name": "Bluetooth Speaker",
+    "price": 140,
+    "oldPrice": 180,
+    "image": "/image/BTspeaker.png",
+    "discount": "12",
+    "rating": 5
+  },
+  {
+    "id": 4,
+    "name": "Laptop Backpack",
+    "price": 89.99,
+    "oldPrice": 100,
+    "image": "/image/Backpack.png",
+    "discount": "10",
+    "rating": 3
+  },
+  {
+    "id": 5,
+    "name": "Gaming Mouse",
+    "price": 125,
+    "oldPrice": 159,
+    "image": "/image/gamingMouse.png",
+    "discount": "2",
+    "rating": 3
+  },
+  {
+    "id": 6,
+    "name": "Mechanical Keyboard",
+    "price": 128,
+    "oldPrice": 139,
+    "image": "/image/Keyboard.png",
+    "discount": "11",
+    "rating": 3
+  },
+  {
+    "id": 7,
+    "name": "USB-C Charger",
+    "price": 25.99,
+    "oldPrice": 39,
+    "image": "/image/USBCharger.png",
+    "discount": "15",
+    "rating": 4
+  },
+  {
+    "id": 8,
+    "name": "USB-C Charger",
+    "price": 25.99,
+    "oldPrice": 39,
+    "image": "/image/USBCharger.png",
+    "discount": "15",
+    "rating": 4
+  }
+]
