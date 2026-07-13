@@ -1,204 +1,506 @@
-.card {
-    border: 1px solid white;
+.products {
     width: 100%;
-    max-width: 250px;
-    overflow: hidden;
-    border-radius: 5px;
 }
+
+
+/* ======================
+        CARD
+====================== */
+
+.card {
+
+    width: 250px;
+
+    overflow: hidden;
+
+    border-radius: 5px;
+
+    border: 1px solid white;
+
+}
+
 
 
 .imageWrap {
-    border: 1px solid #eaeaea;
+
+    width: 250px;
+
+    height: 230px;
+
     background-color: #eaeaea;
-    width: 100%;
-    aspect-ratio: 1 / 0.92;
+
+    border: 1px solid #eaeaea;
+
     position: relative;
+
     overflow: hidden;
+
 }
+
 
 
 .card img {
+
     width: 100%;
+
     height: 100%;
+
     padding: 10px;
+
     object-fit: contain;
+
 }
+
 
 
 .imageWrap:hover {
+
     transform: scale(1.05);
+
     transition: 0.6s ease;
+
 }
 
 
+
+/* ======================
+        SKELETON
+====================== */
+
 .hideOverlay {
+
     display: none;
+
 }
 
 
 .noHover {
+
     pointer-events: none;
+
 }
 
 
-/* DISCOUNT BADGE */
+
+/* ======================
+        OVERLAY
+====================== */
+
+
 .overlay h4 {
+
+    position: absolute;
+
+    top: 10px;
+
+    left: 10px;
+
+
     background-color: #DB4444;
+
     color: white;
+
+
     padding: 5px 8px;
-    margin: 10px;
-    font-size: 12px;
+
     border-radius: 5px;
+
+
+    font-size: 12px;
+
     font-weight: normal;
-    position: absolute;
-    top: 0;
-    left: 0;
+
 }
 
 
-/* HEART ICON */
-.overlay .heart {
-    background-color: white;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    object-fit: contain;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 
-
-/* VIEW ICON */
+.overlay .heart,
 .overlay .view {
+
+
+    position: absolute;
+
+    right: 10px;
+
+
     background-color: white;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-    object-fit: contain;
+
+
+    width: 20px;
+
+    height: 20px;
+
+
+    padding: 7px;
+
+
     border-radius: 50%;
-    position: absolute;
-    top: 45px;
-    right: 0;
+
+
 }
 
 
-/* ADD TO CART BUTTON */
+
+.overlay .heart {
+
+    top: 10px;
+
+}
+
+
+
+.overlay .view {
+
+    top: 55px;
+
+}
+
+
+
+
+
 .overlay h3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    color: white;
-    width: 100%;
+
+
     position: absolute;
+
     bottom: 0;
+
+    left: 0;
+
+
+    width: 100%;
+
+
     height: 35px;
-    cursor: pointer;
-    font-weight: normal;
+
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+
+    background-color: black;
+
+    color: white;
+
+
+    font-size: 14px;
+
+
     opacity: 0;
+
+
+    cursor: pointer;
+
+
 }
+
 
 
 .card:hover h3 {
+
     opacity: 1;
-    transition: 0.3s ease;
+
+    transition: .3s ease;
+
+}
+
+
+
+
+
+/* ======================
+        TEXT
+====================== */
+
+
+.cardText {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+
+    margin: 10px 0;
+
+}
+
+
+
+.cardText h3 {
+
+    font-size: 18px;
+
+    font-weight: 500;
+
+}
+
+
+
+.cardText p {
+
+    color: #DB4444;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
 }
 
 
 
 .card span {
-    text-decoration: line-through;
+
     color: grey;
+
+    text-decoration: line-through;
+
 }
 
 
-.card p {
-    color: #DB4444;
-}
 
 
-.cardText {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin: 10px 0;
-}
 
-
-.cardText h3 {
-    font-size: 18px;
-    font-weight: 500;
-}
-
-
-.cardText p {
-    font-size: 17px;
-    font-weight: 600;
-}
+/* ======================
+        RATING
+====================== */
 
 
 .rating {
+
     display: flex;
+
     align-items: center;
+
     font-size: 12px;
+
 }
 
 
 .rating p {
+
     color: grey;
-    font-weight: 600;
+
     font-size: 12px;
+
+    font-weight: 600;
+
     margin-left: 10px;
+
 }
 
 
+
 .activeStar {
+
     color: rgb(255,190,25);
+
 }
 
 
 .inactiveStar {
+
     color: grey;
-}
-
-
-
-/* TABLET */
-@media(max-width:900px){
-
-    .card {
-        max-width: 220px;
-    }
 
 }
 
 
-/* MOBILE */
-@media(max-width:600px){
+
+
+/* ======================
+        GRID
+====================== */
+
+
+.productGrid {
+
+
+    display: grid;
+
+
+    grid-template-columns: repeat(4,250px);
+
+
+    justify-content: center;
+
+
+    gap:40px;
+
+
+}
+
+
+
+
+/* ======================
+        TABLET
+====================== */
+
+
+@media(max-width:1100px){
+
+
+    .productGrid {
+
+
+        grid-template-columns: repeat(3,250px);
+
+
+        gap:30px;
+
+
+    }
+
+
+}
+
+
+
+
+
+/* ======================
+        MOBILE
+====================== */
+
+
+@media(max-width:768px){
+
+
+    .productGrid {
+
+
+        grid-template-columns: repeat(2,minmax(0,1fr));
+
+
+        gap:20px;
+
+
+        padding:0 20px;
+
+
+    }
+
+
 
     .card {
-        max-width: 170px;
+
+        width:100%;
+
     }
+
+
+
+    .imageWrap {
+
+
+        width:100%;
+
+
+        height:auto;
+
+
+        aspect-ratio:1 / 0.95;
+
+
+    }
+
+
+
+    .card img {
+
+
+        width:100%;
+
+
+        height:100%;
+
+
+    }
+
 
 
     .cardText h3 {
-        font-size: 15px;
+
+
+        font-size:16px;
+
+
     }
+
 
 
     .cardText p {
-        font-size: 14px;
+
+
+        font-size:15px;
+
+
     }
+
+
+
+}
+
+
+
+
+
+/* ======================
+        SMALL MOBILE
+====================== */
+
+
+@media(max-width:400px){
+
+
+    .productGrid {
+
+
+        padding:0 10px;
+
+
+        gap:15px;
+
+
+    }
+
+
+
+    .cardText h3 {
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+    .cardText p {
+
+
+        font-size:13px;
+
+
+    }
+
 
 
     .overlay .heart,
     .overlay .view {
+
+
         width:25px;
+
+
         height:25px;
+
+
     }
+
 
 }

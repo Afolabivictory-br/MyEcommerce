@@ -52,16 +52,19 @@
 }
 
 .bestProduct {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 70px 100px 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 30px 50px;
+    justify-items: center;
 }
 
 .prod {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 0 70px;
-    row-gap: 40px;
+    margin: 0 50px;
+    gap: 10px;
+    justify-items: center;
 }
 
 .time {
@@ -322,14 +325,13 @@
 
 
     .bestProduct {
-        margin: 0 30px 80px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 
-
     .prod {
+        display: grid;
         grid-template-columns: repeat(3, 1fr);
-        margin: 0 30px;
-        gap: 30px;
     }
 
 
@@ -449,20 +451,14 @@
 
     .bestProduct {
 
-        margin: 0 20px 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
 
     }
 
-
-
     .prod {
-
-        grid-template-columns: repeat(2,1fr);
-
-        margin: 0 20px;
-
-        gap: 20px;
-
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
 
@@ -551,6 +547,8 @@
         width: 100%;
 
         height: auto;
+        background: none;
+        margin-top: 40px;
 
     }
 
@@ -649,7 +647,7 @@
 ========================= */
 
 
-@media(max-width:480px){
+@media(max-width:500px){
 
 
     .ticker {
@@ -676,10 +674,15 @@
 
 
 
+    .bestProduct {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
     .prod {
-
-        grid-template-columns: 1fr;
-
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
 

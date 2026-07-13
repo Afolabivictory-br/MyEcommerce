@@ -46,7 +46,7 @@ nav {
     background: rgba(56, 56, 56, 0.2);
     backdrop-filter: blur(30px);
     position: absolute;
-    top: 140px;
+    top: 90px;
     transform: translateX(-60%);
     color: white;
 }
@@ -223,6 +223,10 @@ nav {
 
     .searchWrapper {
         width: 220px;
+    }
+
+    .acctDropdown {
+        top: 130px;
     }
 
 }
