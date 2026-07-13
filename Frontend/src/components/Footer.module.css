@@ -6,10 +6,10 @@
 .footerContent {
     display: flex;
     justify-content: space-between;
-    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 40px;
     margin: 0 70px;
     padding: 50px 0;
-    height: 350px;
     line-height: 2.1;
 }
 
@@ -23,6 +23,7 @@
 
 .inputWrap input {
     height: 100%;
+    width: 100%;
     background: transparent;
     border: none;
     outline: none;
@@ -78,6 +79,8 @@
     justify-content: space-around;
     margin: 20px 0;
     font-size: 21px;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 .copyright {
@@ -87,4 +90,48 @@
 .copyright p{
     font-size: 18px;
     padding: 20px;
+}
+
+/* ============================
+   RESPONSIVE BREAKPOINTS
+   ============================ */
+
+@media (max-width: 1024px) {
+  .footerContent {
+    margin: 0 40px;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footerContent {
+    margin: 0 20px;
+    padding: 40px 0;
+    gap: 30px;
+  }
+
+  .appscan img {
+    width: 64px;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+
+  .copyright p {
+    font-size: 14px;
+    padding: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footerContent {
+    margin: 0 16px;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  .inputWrap {
+    width: 100%;
+  }
 }

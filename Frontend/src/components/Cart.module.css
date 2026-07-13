@@ -26,6 +26,7 @@
   letter-spacing: 0.06em;
   color: var(--gray-mid);
   padding: 28px 0 0;
+  flex-wrap: wrap;
 }
 .breadcrumb a {
   color: var(--gray-mid);
@@ -40,7 +41,6 @@
 .cartPage {
   font-family: 'Josefin Sans', sans-serif;
   max-width: 1170px;
-  height: 840;
   margin: 0 auto;
   padding: 0 24px 60px;
   color: var(--black);
@@ -166,6 +166,7 @@
   border-radius: 4px;
   overflow: hidden;
   width: 72px;
+  flex-shrink: 0;
 }
 
 .qtyInputWrap input[type="number"] {
@@ -227,6 +228,8 @@
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .btnOutline {
@@ -234,6 +237,7 @@
   background: transparent;
   color: var(--black);
   width: 218px;
+  max-width: 100%;
   height: 56px;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -264,17 +268,17 @@
 .couponSection {
   display: flex;
   gap: 10px;
-  height: 46px;
+  height: 56px;
 }
 
 .couponInput {
   flex: 1;
+  min-width: 0;
   border: 1.5px solid var(--border);
   border-right: none;
   border-radius: var(--radius) 0 0 var(--radius);
-  /* padding: 0 16px; */
+  padding: 0 16px;
   height: 56px;
-  width: 300px;
   font-family: 'Josefin Sans', sans-serif;
   font-size: 13px;
   color: var(--black);
@@ -299,8 +303,8 @@
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  padding: 16px 48px;
-  width: 211px;
+  padding: 16px 24px;
+  flex-shrink: 0;
   height: 56px;
   cursor: pointer;
   transition: background var(--transition);
@@ -417,6 +421,33 @@
 }
 
 /* ── Responsive ── */
+
+/* Tablet: table columns get cramped before they need to fully stack */
+@media (max-width: 900px) {
+  .cartPage {
+    padding: 0 16px 50px;
+  }
+
+  .cartTableHeader,
+  .cartRow {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+
+  .cartTableHeader {
+    grid-template-columns: 1.8fr 1fr 1fr 1fr;
+    font-size: 13px;
+  }
+
+  .cartRow {
+    grid-template-columns: 1.8fr 1fr 1fr 1fr;
+  }
+
+  .cartBottom {
+    gap: 20px;
+  }
+}
+
 @media (max-width: 620px) {
   .cartTableHeader { display: none; }
 
@@ -440,5 +471,32 @@
     flex-direction: column;
     gap: 10px;
   }
-  .btnOutline { text-align: center; }
+  .btnOutline {
+    width: 100%;
+    text-align: center;
+  }
+
+  .couponSection {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .couponInput {
+    flex-basis: 100%;
+    border-right: 1.5px solid var(--border);
+    border-radius: var(--radius);
+  }
+  .btnCoupon {
+    flex: 1;
+    border-radius: var(--radius);
+  }
+}
+
+@media (max-width: 400px) {
+  .cartRow {
+    grid-template-columns: 1fr;
+  }
+  .priceCell,
+  .subtotalCell {
+    text-align: left;
+  }
 }

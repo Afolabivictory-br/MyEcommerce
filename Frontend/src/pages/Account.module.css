@@ -1,46 +1,57 @@
 .account {
     display: grid;
-    grid-template-columns: 1fr 3fr;
-    margin: 70px;
+    grid-template-columns: 250px 1fr;
+    gap: 50px;
+    max-width: 1170px;
+    margin: 70px auto;
+    padding: 0 20px;
 }
+
 
 .accountInfo {
     line-height: 2.3;
-    position: sticky;
 }
+
 
 .accountInfo h3 {
     font-size: 15px;
 }
+
 
 .accountInfo p {
     margin-left: 20px;
     font-size: 13px;
     cursor: pointer;
 }
+
+
 .accountInfo p:hover {
     color: #DB4444;
 }
+
 
 form {
     font-size: 12px;
 }
 
+
 .input {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 50px;
-    row-gap: 15px;
+    gap: 15px 50px;
     margin-bottom: 15px;
 }
 
+
 input {
     height: 35px;
+    width: 100%;
     padding: 0 10px;
-    background-color: rgb(235, 234, 234);
+    background-color: rgb(235,234,234);
     border: none;
     outline: none;
 }
+
 
 .inputInfo {
     display: flex;
@@ -48,16 +59,20 @@ input {
     gap: 10px;
 }
 
+
 .accountChanges {
     padding: 30px 70px;
     background-color: white;
-    box-shadow: 0px 2px 5px rgb(189, 189, 189);
+    box-shadow: 0px 2px 5px rgb(189,189,189);
 }
+
+
 .accountChanges h2 {
     color: #DB4444;
     font-size: 15px;
     padding-bottom: 15px;
 }
+
 
 .password {
     display: flex;
@@ -65,11 +80,14 @@ input {
     gap: 15px;
 }
 
+
 .btns {
     display: flex;
-    float: right;
+    justify-content: flex-end;
+    gap: 20px;
     margin-top: 15px;
 }
+
 
 .cancelBtn {
     border: none;
@@ -77,11 +95,87 @@ input {
     cursor: pointer;
 }
 
+
 .saveBtn {
     background-color: #DB4444;
     color: white;
     border: none;
     width: 300px;
+    max-width: 100%;
+    height: 35px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+
+
+/* TABLET */
+
+@media(max-width:900px){
+
+    .account {
+        grid-template-columns: 1fr;
+        margin: 40px auto;
+    }
+
+
+    .accountInfo {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+
+
+    .accountChanges {
+        padding: 30px;
+    }
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .account {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+
+    .accountInfo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .accountInfo p {
+        margin-left: 0;
+    }
+
+
+    .input {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+
+    .accountChanges {
+        padding: 20px;
+    }
+
+
+    .btns {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+
+    .saveBtn {
+        width: 100%;
+    }
+
 }

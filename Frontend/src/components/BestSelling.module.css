@@ -1,124 +1,432 @@
+/* =========================
+        PRODUCT GRID
+========================= */
+
+.prod {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    padding: 0 70px;
+}
+
+
+
+/* =========================
+        CARD
+========================= */
+
 .card {
     border: 1px solid white;
-    width: 250px;
+    width: 100%;
     overflow: hidden;
     border-radius: 5px;
 }
 
+
 .card img {
-    width: 250px;
+    width: 100%;
     height: 230px;
     padding: 10px;
     object-fit: contain;
 }
 
+
 .imageWrap {
     border: 1px solid #eaeaea;
     background-color: #eaeaea;
-    width: 250px;
+    width: 100%;
     height: 230px;
     position: relative;
+    overflow: hidden;
 }
+
 
 .imageWrap:hover {
     transform: scale(1.05);
     transition: 0.6s ease;
 }
 
+
+
+/* =========================
+        SKELETON
+========================= */
+
 .hideOverlay {
     display: none;
 }
+
 
 .noHover {
     pointer-events: none;
 }
 
-.overlay .heart {
-    background-color: white;
+
+
+/* =========================
+        OVERLAY
+========================= */
+
+.overlay h4 {
+
+    background-color: #DB4444;
+    color: white;
+
     padding: 5px;
+    margin: 10px;
+
+    font-size: 12px;
+    border-radius: 5px;
+
+    font-weight: normal;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+.overlay .heart {
+
+    background-color: white;
+
+    padding: 5px;
+
     width: 20px;
     height: 20px;
+
     margin: 10px;
+
     object-fit: contain;
+
     border-radius: 50%;
+
     position: absolute;
-    bottom: 180px;
-    left: 200px;
+
+    top: 0;
+    right: 0;
 }
+
+
 
 .overlay .view {
+
     background-color: white;
+
     padding: 5px;
+
     width: 20px;
     height: 20px;
+
     margin: 10px;
+
     object-fit: contain;
+
     border-radius: 50%;
+
     position: absolute;
-    bottom: 140px;
-    left: 200px;
+
+    top: 40px;
+    right: 0;
 }
+
+
 
 .overlay h3 {
+
     display: flex;
+
     align-items: center;
+
     justify-content: center;
+
     background-color: black;
+
     color: white;
-    width: 250px;
+
+    width: 100%;
+
     position: absolute;
+
     bottom: 0;
+
     height: 30px;
+
     cursor: pointer;
+
     font-weight: normal;
+
+    font-size: 15px;
+
     opacity: 0;
+
 }
+
+
 
 .card:hover h3 {
+
     opacity: 1;
+
     transition: 0.3s ease;
+
 }
+
+
+
+/* =========================
+        TEXT
+========================= */
+
 
 .card span {
+
     text-decoration: line-through;
+
     color: grey;
+
 }
+
+
 .card p {
+
     color: #DB4444;
+
 }
+
+
 
 .cardText {
+
     display: flex;
+
     flex-direction: column;
+
     gap: 10px;
+
     margin: 10px 0;
+
 }
+
+
 
 .cardText h3 {
+
     font-size: 18px;
+
     font-weight: 500;
+
 }
+
+
+
 .cardText p {
+
     font-size: 17px;
+
     font-weight: 600;
+
 }
+
+
+
+/* =========================
+        RATING
+========================= */
+
 
 .activeStar {
-    color: rgb(255, 190, 25);
+
+    color: rgb(255,190,25);
+
 }
+
+
 .inactiveStar {
+
     color: grey;
+
 }
+
+
 
 .rating {
+
     display: flex;
+
     align-items: center;
+
     font-size: 12px;
+
 }
 
+
+
 .rating p {
+
     color: grey;
+
     font-weight: 600;
+
     font-size: 12px;
+
     margin-left: 10px;
+
+}
+
+
+
+/* =========================
+        TABLET
+========================= */
+
+
+@media(max-width:1000px){
+
+
+    .prod {
+
+        grid-template-columns: repeat(3,1fr);
+
+        gap:30px;
+
+        padding:0 40px;
+
+    }
+
+
+    .imageWrap {
+
+        height:210px;
+
+    }
+
+
+    .card img {
+
+        height:210px;
+
+    }
+
+
+}
+
+
+
+/* =========================
+        MOBILE
+========================= */
+
+
+@media(max-width:600px){
+
+
+    .prod {
+
+        grid-template-columns: repeat(2,1fr);
+
+        gap:20px;
+
+        padding:0 20px;
+
+    }
+
+
+    .imageWrap {
+
+        height:170px;
+
+    }
+
+
+    .card img {
+
+        height:170px;
+
+    }
+
+
+    .overlay .heart {
+
+        width:18px;
+
+        height:18px;
+
+    }
+
+
+    .overlay .view {
+
+        width:18px;
+
+        height:18px;
+
+        top:35px;
+
+    }
+
+
+    .cardText h3 {
+
+        font-size:15px;
+
+    }
+
+
+    .cardText p {
+
+        font-size:14px;
+
+    }
+
+
+}
+
+
+
+/* =========================
+        SMALL MOBILE
+========================= */
+
+
+@media(max-width:400px){
+
+
+    .prod {
+
+        padding:0 10px;
+
+        gap:15px;
+
+    }
+
+
+    .imageWrap {
+
+        height:140px;
+
+    }
+
+
+    .card img {
+
+        height:140px;
+
+    }
+
+
+    .cardText h3 {
+
+        font-size:14px;
+
+    }
+
+
+    .cardText p {
+
+        font-size:13px;
+
+    }
+
 }

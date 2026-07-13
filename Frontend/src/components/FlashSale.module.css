@@ -5,6 +5,7 @@
     border-radius: 5px;
 }
 
+
 .card img {
     width: 250px;
     height: 230px;
@@ -12,18 +13,36 @@
     object-fit: contain;
 }
 
+
 .imageWrap {
     border: 1px solid #eaeaea;
     background-color: #eaeaea;
     width: 250px;
     height: 230px;
     position: relative;
+    overflow: hidden;
 }
+
 
 .imageWrap:hover {
     transform: scale(1.05);
     transition: 0.6s ease;
 }
+
+
+/* SKELETON */
+
+.hideOverlay {
+    display: none;
+}
+
+.noHover {
+    pointer-events: none;
+}
+
+
+
+/* OVERLAY */
 
 .overlay h4 {
     background-color: #DB4444;
@@ -37,17 +56,22 @@
     bottom: 185px;
 }
 
+
+
 .overlay .heart {
     background-color: white;
     padding: 5px;
     width: 20px;
     height: 20px;
     margin: 10px;
+    object-fit: contain;
     border-radius: 50%;
     position: absolute;
     bottom: 180px;
     left: 200px;
 }
+
+
 
 .overlay .view {
     background-color: white;
@@ -55,11 +79,14 @@
     width: 20px;
     height: 20px;
     margin: 10px;
+    object-fit: contain;
     border-radius: 50%;
     position: absolute;
     bottom: 140px;
     left: 200px;
 }
+
+
 
 .overlay h3 {
     display: flex;
@@ -77,27 +104,26 @@
     opacity: 0;
 }
 
-.noHover {
-    pointer-events: none;
-}
 
 .card:hover h3 {
     opacity: 1;
     transition: 0.3s ease;
 }
 
-.hideOverlay {
-    display: none;
-}
+
+
+/* TEXT */
 
 .card span {
     text-decoration: line-through;
     color: grey;
 }
 
+
 .card p {
     color: #DB4444;
 }
+
 
 .cardText {
     display: flex;
@@ -106,23 +132,30 @@
     margin: 10px 0;
 }
 
+
 .cardText h3 {
     font-size: 18px;
     font-weight: 500;
 }
+
 
 .cardText p {
     font-size: 17px;
     font-weight: 600;
 }
 
+
+
+/* RATING */
+
 .activeStar {
-    color: rgb(255, 190, 25);
+    color: rgb(255,190,25);
 }
 
 .inactiveStar {
     color: grey;
 }
+
 
 .rating {
     display: flex;
@@ -130,9 +163,188 @@
     font-size: 12px;
 }
 
+
 .rating p {
     color: grey;
     font-weight: 600;
     font-size: 12px;
     margin-left: 10px;
+}
+
+
+
+/* =========================
+        RESPONSIVE
+========================= */
+
+
+/* TABLET */
+
+@media(max-width:1000px){
+
+    .card {
+        width: 220px;
+    }
+
+
+    .card img {
+        width: 220px;
+        height: 210px;
+    }
+
+
+    .imageWrap {
+        width: 220px;
+        height: 210px;
+    }
+
+
+    .overlay h3 {
+        width: 220px;
+    }
+
+
+    .overlay .heart {
+        left: 170px;
+    }
+
+
+    .overlay .view {
+        left: 170px;
+    }
+
+
+    .overlay h4 {
+        bottom: 165px;
+    }
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:600px){
+
+    .card {
+        width: 180px;
+    }
+
+
+    .card img {
+        width: 180px;
+        height: 170px;
+    }
+
+
+    .imageWrap {
+        width: 180px;
+        height: 170px;
+    }
+
+
+    .overlay h3 {
+        width: 180px;
+        height: 28px;
+        font-size: 13px;
+    }
+
+
+    .overlay .heart {
+
+        width: 18px;
+        height: 18px;
+
+        left: 130px;
+
+        bottom: 125px;
+
+    }
+
+
+    .overlay .view {
+
+        width: 18px;
+        height: 18px;
+
+        left: 130px;
+
+        bottom: 90px;
+
+    }
+
+
+    .overlay h4 {
+        bottom: 130px;
+        font-size: 11px;
+    }
+
+
+    .cardText h3 {
+        font-size: 15px;
+    }
+
+
+    .cardText p {
+        font-size: 14px;
+    }
+
+
+    .rating {
+        font-size: 11px;
+    }
+
+}
+
+
+
+/* VERY SMALL MOBILE */
+
+@media(max-width:400px){
+
+    .card {
+
+        width: 160px;
+
+    }
+
+
+    .card img {
+
+        width:160px;
+
+        height:150px;
+
+    }
+
+
+    .imageWrap {
+
+        width:160px;
+
+        height:150px;
+
+    }
+
+
+    .overlay h3 {
+
+        width:160px;
+
+    }
+
+
+    .overlay .heart {
+
+        left:110px;
+
+    }
+
+
+    .overlay .view {
+
+        left:110px;
+
+    }
+
 }

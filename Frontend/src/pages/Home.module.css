@@ -291,3 +291,497 @@
     transform: translateX(-100%);
   }
 }
+
+/* =========================
+        TABLET RESPONSIVE
+========================= */
+
+@media(max-width:1100px){
+
+    .ticker {
+        margin: 20px 30px;
+    }
+
+
+    .titlePage h2 {
+        margin: 0 30px;
+        font-size: 32px;
+    }
+
+
+    .title {
+        margin: 30px 30px 0;
+    }
+
+
+    .flashSale {
+        margin: 0 30px;
+        gap: 40px;
+        font-size: 32px;
+    }
+
+
+    .bestProduct {
+        margin: 0 30px 80px;
+    }
+
+
+    .prod {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 30px;
+        gap: 30px;
+    }
+
+
+    .cart {
+        margin: 20px 30px;
+    }
+
+
+    .advert {
+        margin: 0 30px;
+        height: 350px;
+    }
+
+
+    .advertText {
+        margin-left: 30px;
+    }
+
+
+    .advertText h2 {
+        font-size: 40px;
+    }
+
+
+    .advert img {
+        width: 380px;
+    }
+
+
+    .advertImg {
+        width: 450px;
+        height: 350px;
+    }
+
+
+    .categories {
+        margin: 0 30px;
+    }
+
+
+    .featuredGrid {
+        margin: 10px 30px;
+        height: 500px;
+    }
+
+
+    .leftGrid {
+        height: 500px;
+    }
+
+
+    .rightGrid {
+        height: 500px;
+    }
+
+}
+
+
+
+/* =========================
+        MOBILE
+========================= */
+
+
+@media(max-width:768px){
+
+
+    .ticker {
+        margin: 15px;
+        padding: 8px 0;
+        font-size: 13px;
+    }
+
+
+    .titlePage h2 {
+        margin: 0 20px;
+        font-size: 28px;
+    }
+
+
+    .title {
+        margin: 30px 20px 0;
+        font-size: 15px;
+    }
+
+
+    .design {
+        height: 30px;
+        width: 15px;
+    }
+
+
+
+    .flashSale {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        margin: 0 20px;
+
+        font-size: 28px;
+
+    }
+
+
+
+    .time {
+
+        margin-top: 10px;
+
+    }
+
+
+
+    .bestProduct {
+
+        margin: 0 20px 50px;
+
+    }
+
+
+
+    .prod {
+
+        grid-template-columns: repeat(2,1fr);
+
+        margin: 0 20px;
+
+        gap: 20px;
+
+    }
+
+
+
+    .cart {
+
+        margin: 20px;
+
+        gap: 15px;
+
+    }
+
+
+
+    .more {
+
+        margin: 40px 0;
+
+    }
+
+
+
+    .button {
+
+        margin: 0 20px;
+
+    }
+
+
+
+    /* ADVERTISEMENT */
+
+
+    .advert {
+
+        flex-direction: column;
+
+        justify-content: center;
+
+        height: auto;
+
+        min-height: 600px;
+
+        margin: 0 20px;
+
+        text-align: center;
+
+    }
+
+
+
+    .advertText {
+
+        margin-left: 0;
+
+    }
+
+
+
+    .advertText h4 {
+
+        margin: 15px 0;
+
+    }
+
+
+
+    .advertText h2 {
+
+        font-size: 32px;
+
+    }
+
+
+
+    .duration {
+
+        justify-content: center;
+
+    }
+
+
+
+    .advertImg {
+
+        width: 100%;
+
+        height: auto;
+
+    }
+
+
+
+    .advert img {
+
+        width: 300px;
+
+    }
+
+
+
+    /* FEATURED SECTION */
+
+
+    .categories {
+
+        margin: 0 20px;
+
+    }
+
+
+
+    .featuredGrid {
+
+        display: flex;
+
+        flex-direction: column;
+
+        height: auto;
+
+        margin: 10px 20px;
+
+        gap: 15px;
+
+    }
+
+
+
+    .leftGrid {
+
+        height: 400px;
+
+    }
+
+
+
+    .rightGrid {
+
+        height: auto;
+
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+
+    .rightGrid1 {
+
+        height: 300px;
+
+    }
+
+
+
+    .rightGrid2 {
+
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+
+    }
+
+
+
+    .rightGrid1Sub1,
+    .rightGrid1Sub {
+
+        height: 300px;
+
+    }
+
+}
+
+
+
+/* =========================
+        SMALL MOBILE
+========================= */
+
+
+@media(max-width:480px){
+
+
+    .ticker {
+
+        font-size: 12px;
+
+    }
+
+
+
+    .titlePage h2 {
+
+        font-size: 24px;
+
+    }
+
+
+
+    .flashSale {
+
+        font-size: 24px;
+
+    }
+
+
+
+    .prod {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+
+    .advert {
+
+        min-height: 550px;
+
+    }
+
+
+
+    .advertText h2 {
+
+        font-size: 26px;
+
+    }
+
+
+
+    .advert img {
+
+        width: 240px;
+
+    }
+
+
+
+    .advertTime {
+
+        height: 50px;
+
+        width: 50px;
+
+    }
+
+
+
+    .advertTime p {
+
+        font-size: 10px;
+
+    }
+
+
+
+    .gridText h3 {
+
+        font-size: 22px;
+
+    }
+
+
+
+    .gridText p {
+
+        font-size: 13px;
+
+    }
+
+}
+
+/* =========================
+      VIEW ALL PRODUCT BUTTON
+      RESPONSIVE
+========================= */
+
+
+@media(max-width:768px){
+
+    .button {
+        margin: 0 20px;
+        width: calc(100% - 40px);
+    }
+
+
+    .more {
+        width: 200px;
+        max-width: 100%;
+        margin: 40px auto;
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+
+}
+
+
+
+@media(max-width:480px){
+
+    .button {
+        margin: 0 15px;
+        width: calc(100% - 30px);
+    }
+
+
+    .more {
+        width: 100%;
+        max-width: 250px;
+        margin: 35px auto;
+        padding: 13px 15px;
+        font-size: 15px;
+    }
+
+}
