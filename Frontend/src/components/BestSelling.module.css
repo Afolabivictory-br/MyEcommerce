@@ -1,621 +1,220 @@
-.products {
-    width: 100%;
-}
-
-
-.card {
-
-    width:250px;
-
-    overflow:hidden;
-
-    border-radius:5px;
-
-    border:1px solid white;
-
-}
-
-
-
-
-.imageWrap {
-
-
-    width:250px;
-
-    height:230px;
-
-
-    background-color:#eaeaea;
-
-    border:1px solid #eaeaea;
-
-
-    position:relative;
-
-    overflow:hidden;
-
-
-}
-
-
-
-
-.card img {
-
-
+.products{
     width:100%;
-
-    height:100%;
-
-
-    padding:10px;
-
-
-    object-fit:contain;
-
-
 }
 
-
-
-
-
-.imageWrap:hover {
-
-
-    transform:scale(1.05);
-
-    transition:.6s ease;
-
-
-}
-
-
-
-
-
-/* ======================
-        SKELETON
-====================== */
-
-
-.hideOverlay {
-
-    display:none;
-
-}
-
-
-.noHover {
-
-    pointer-events:none;
-
-}
-
-
-
-
-/* ======================
-        OVERLAY
-====================== */
-
-
-.overlay h4 {
-
-
-    position:absolute;
-
-
-    top:10px;
-
-    left:10px;
-
-
-
-    background:#DB4444;
-
-
-    color:white;
-
-
-    padding:5px 8px;
-
-
+.card{
+    width:250px;
+    overflow:hidden;
     border-radius:5px;
-
-
-    font-size:12px;
-
-
-    font-weight:normal;
-
-
+    border:1px solid white;
 }
 
+.imageWrap{
+    width:250px;
+    height:230px;
+    background-color:#eaeaea;
+    border:1px solid #eaeaea;
+    position:relative;
+    overflow:hidden;
+}
 
+.card img{
+    width:100%;
+    height:100%;
+    padding:10px;
+    object-fit:contain;
+}
 
+.imageWrap:hover{
+    transform:scale(1.05);
+    transition:.6s ease;
+}
+
+.hideOverlay{
+    display:none;
+}
+
+.noHover{
+    pointer-events:none;
+}
+
+.overlay h4{
+    position:absolute;
+    top:10px;
+    left:10px;
+    background:#DB4444;
+    color:white;
+    padding:5px 8px;
+    border-radius:5px;
+    font-size:12px;
+    font-weight:normal;
+}
 
 .overlay .heart,
-.overlay .view {
-
-
+.overlay .view{
     position:absolute;
-
-
     right:10px;
-
-
     background:white;
-
-
     width:20px;
-
     height:20px;
-
-
     padding:7px;
-
-
     border-radius:50%;
-
-
 }
 
-
-
-
-.overlay .heart {
-
-
+.overlay .heart{
     top:10px;
-
-
 }
 
-
-
-.overlay .view {
-
-
+.overlay .view{
     top:55px;
-
-
 }
 
-
-
-
-.overlay h3 {
-
-
+.overlay h3{
     position:absolute;
-
-
     bottom:0;
-
     left:0;
-
-
     width:100%;
-
-
     height:35px;
-
-
     display:flex;
-
-
     justify-content:center;
-
-
     align-items:center;
-
-
-
     background:black;
-
-
     color:white;
-
-
     font-size:14px;
-
-
     font-weight:normal;
-
-
     opacity:0;
-
-
     cursor:pointer;
-
-
 }
 
-
-
-
-.card:hover h3 {
-
-
+.card:hover h3{
     opacity:1;
-
-
     transition:.3s ease;
-
-
 }
 
-
-
-
-
-/* ======================
-        TEXT
-====================== */
-
-
-.cardText {
-
-
+.cardText{
     display:flex;
-
-
     flex-direction:column;
-
-
     gap:10px;
-
-
     margin:10px 0;
-
-
 }
 
-
-
-
-.cardText h3 {
-
-
+.cardText h3{
     font-size:18px;
-
-
     font-weight:500;
-
-
 }
 
-
-
-
-.cardText p {
-
-
+.cardText p{
     color:#DB4444;
-
-
     font-size:17px;
-
-
     font-weight:600;
-
-
 }
 
-
-
-
-.card span {
-
-
+.card span{
     color:grey;
-
-
     text-decoration:line-through;
-
-
 }
 
-
-
-
-
-/* ======================
-        RATING
-====================== */
-
-
-.rating {
-
-
+.rating{
     display:flex;
-
-
     align-items:center;
-
-
     font-size:12px;
-
-
 }
 
-
-
-
-.rating p {
-
-
+.rating p{
     color:grey;
-
-
     font-size:12px;
-
-
     margin-left:10px;
-
-
 }
 
-
-
-
-.activeStar {
-
-
+.activeStar{
     color:rgb(255,190,25);
-
-
 }
 
-
-
-.inactiveStar {
-
-
+.inactiveStar{
     color:grey;
-
-
 }
 
 
+/* GRID */
 
-
-
-
-/* ======================
-        GRID
-====================== */
-
-
-.prod {
-
-
+.prod{
     display:grid;
-
-
     grid-template-columns:repeat(4,250px);
-
-
     justify-content:center;
-
-
     gap:40px;
-
-
 }
 
 
-
-
-
-
-
-/* ======================
-        TABLET
-====================== */
-
+/* TABLET */
 
 @media(max-width:1100px){
-
-
-    .prod {
-
-
+    .prod{
         grid-template-columns:repeat(3,250px);
-
-
         gap:30px;
-
-
     }
-
-
 }
 
 
-
-
-
-
-
-/* ======================
-        MOBILE
-====================== */
-
+/* MOBILE */
 
 @media(max-width:768px){
-
-
-    .prod {
-
-
+    .prod{
         grid-template-columns:repeat(2,minmax(0,1fr));
-
-
         gap:20px;
-
-
         padding:0 20px;
-
-
     }
 
-
-
-
-    .card {
-
-
+    .card{
         width:100%;
-
-
     }
 
-
-
-
-    .imageWrap {
-
-
+    .imageWrap{
         width:100%;
-
-
         height:auto;
-
-
-        aspect-ratio:1 / .95;
-
-
+        aspect-ratio:1/.95;
     }
 
-
-
-
-
-    .card img {
-
-
+    .card img{
         width:100%;
-
-
         height:100%;
-
-
     }
-
-
-
-
 
     .overlay .heart,
-    .overlay .view {
-
-
+    .overlay .view{
         width:25px;
-
-
         height:25px;
-
-
         padding:6px;
-
-
     }
 
-
-
-
-
-    .cardText h3 {
-
-
+    .cardText h3{
         font-size:16px;
-
-
     }
 
-
-
-
-
-    .cardText p {
-
-
+    .cardText p{
         font-size:15px;
-
-
     }
-
-
-
 }
 
 
-
-
-
-
-
-/* ======================
-        SMALL PHONE
-====================== */
-
+/* SMALL PHONE */
 
 @media(max-width:400px){
-
-
-    .prod {
-
-
+    .prod{
         padding:0 10px;
-
-
         gap:15px;
-
-
     }
 
-
-
-
-
-    .cardText h3 {
-
-
+    .cardText h3{
         font-size:14px;
-
-
     }
 
-
-
-
-
-    .cardText p {
-
-
+    .cardText p{
         font-size:13px;
-
-
     }
-
-
-
-
 
     .overlay .heart,
-    .overlay .view {
-
-
+    .overlay .view{
         width:22px;
-
-
         height:22px;
-
-
     }
-
-
 }

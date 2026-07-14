@@ -22,7 +22,7 @@ const SignUp = () => {
             Sign Up with Google
           </div>
         </div>
-        <p>Already have an account? <a href="#">Login</a></p>
+        <p>Already have an account? <a href="/Login">Login</a></p>
       </div>
     </div>
   )

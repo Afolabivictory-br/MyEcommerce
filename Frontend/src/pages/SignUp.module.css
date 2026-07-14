@@ -7,9 +7,6 @@
     padding: 50px;
 }
 
-
-/* IMAGE */
-
 .signUpImg {
     flex: 1;
     display: flex;
@@ -23,10 +20,6 @@
     height: auto;
     object-fit: contain;
 }
-
-
-
-/* FORM */
 
 .signUp {
     flex: 1;
@@ -46,10 +39,6 @@
     margin: 15px 0;
     font-size: 14px;
 }
-
-
-
-/* INPUT AREA */
 
 .inputWrap {
     display: flex;
@@ -92,10 +81,6 @@
     background-color: #b83232;
 }
 
-
-
-/* GOOGLE BUTTON */
-
 .googleSignup {
     display: flex;
     align-items: center;
@@ -114,10 +99,6 @@
     width: 20px;
 }
 
-
-
-/* TEXT */
-
 .signUpPage p {
     text-align: center;
     font-size: 13px;
@@ -131,9 +112,6 @@
     font-weight: 600;
 }
 
-
-
-/* TABLET */
 
 @media(max-width:1000px){
 
@@ -153,10 +131,6 @@
     }
 
 }
-
-
-
-/* MOBILE */
 
 @media(max-width:700px){
 
